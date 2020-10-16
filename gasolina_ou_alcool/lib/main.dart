@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'CampoTexto.dart';
+
+import 'home.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: CampoTexto(),
+    home: Home(),
     debugShowCheckedModeBanner: false,
   ));
 }
