@@ -18,15 +18,17 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.blue,
       ),
       body: Container(
+        child: SingleChildScrollView(
          padding: EdgeInsets.all(32),
-        child: Column(
+          child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Padding(
               padding: EdgeInsets.only(bottom: 32),
               child: Image.asset("images/logo.png"),
             ),
             Padding(
-              padding: EdgeInsets.only(bottom: 10),
+              padding: EdgeInsets.only(bottom: 20),
               child: Text("Saiba qual a melhor opção para o abastecimento do seu carro",
                 style: TextStyle(
                   fontSize: 25,
@@ -43,7 +45,7 @@ class _HomeState extends State<Home> {
                 decoration: InputDecoration(
                   labelText: "Preço do Álcool, ex: 1.59",
                   labelStyle: TextStyle(
-                    fontSize: 22,
+                    fontSize: 19,
                     color: Colors.black
                   )
                 ),
@@ -57,7 +59,7 @@ class _HomeState extends State<Home> {
                 decoration: InputDecoration(
                   labelText: "Preço da Gasolina, ex: 3.59",
                   labelStyle: TextStyle(
-                    fontSize: 22,
+                    fontSize: 19,
                     color: Colors.black
                   )
                   ),
@@ -70,19 +72,30 @@ class _HomeState extends State<Home> {
             Padding(
               padding: EdgeInsets.only(top: 10),
               child: RaisedButton(
-              color: Colors.blue,
-              child: Text("Calcular",
-              
-              style: TextStyle(
-                fontSize: 18,
-                color: Colors.white
-              ),),
-              
-              onPressed: (){},
+                color: Colors.blue,
+                padding: EdgeInsets.all(15),
+
+                child: Text("Calcular",
+                
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.white
+                ),),
+                
+                onPressed: (){},
             )
-            )
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 20),
+              child: Text("Resultado",
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold
+                ),),
+              )
            
           ],
+        ),
         ),
       ),
     );
