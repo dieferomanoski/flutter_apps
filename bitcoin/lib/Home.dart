@@ -9,29 +9,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  // TextEditingController _cepController = TextEditingController();
-
-  // String _resultado = '';
-
-  // _recuperarCep() async {
-  //   String cepDigitado = _cepController.text;
-  //   String url = "https://viacep.com.br/ws/${cepDigitado}/json/";
-
-  //   http.Response response;
-
-  //   response = await http.get(url);
-
-  //   Map<String, dynamic> objeto = json.decode(response.body);
-
-  //   String cidade = objeto["localidade"];
-  //   setState(() {
-  //     _resultado = cidade;
-  //   });
-
-  //   print(cidade);
-
-  // print(response.statusCode.toString());
-  // print(response.body);
+ 
   String _preco = '0';
 
   void _recuperarPreco() async {
